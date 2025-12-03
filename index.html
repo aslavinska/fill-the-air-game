@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#87CEEB">
+    <title>Fill The Air</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        
+        <!-- Game UI -->
+        <div id="gameUI">
+            <div id="score">Score: 0</div>
+            <div id="bestScore">Best: 0</div>
+        </div>
+        
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen">
+            <h1>Fill The Air</h1>
+            <p>Hold to grow your bubble<br>Release to stop growing</p>
+            <p>Squeeze through gaps without popping!</p>
+            <button id="startBtn">Start Game</button>
+        </div>
+        
+        <!-- Game Over Screen -->
+        <div id="gameOverScreen" class="screen hidden">
+            <h2>Game Over</h2>
+            <div id="finalScore">Score: 0</div>
+            <div id="gameOverReason"></div>
+            <button id="restartBtn">Play Again</button>
+        </div>
+        
+        <!-- Instructions for mobile -->
+        <div id="mobileInstructions">
+            <p>Tap and hold anywhere to grow bubble</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
